@@ -8,14 +8,16 @@ from playwright.sync_api import sync_playwright
 
 VIDEO = sys.argv[1]
 TITLE = sys.argv[2] if len(sys.argv) > 2 else "Study Companion — demo"
-DESCRIPTION = """Study Companion — a source-grounded, adaptive AI tutor.
-Multimodal AI Hackathon 2026, Track D: Personalized Tutoring & Adaptive Learning.
+DESCRIPTION = """EchoScholar — an audio-first, source-grounded study companion.
+ML Empowerment Build Challenge 3.0.
 
 Turns your own course material (PDF, slides, notes, lecture transcripts) into a
-source-cited knowledge base, then runs grounded tutoring with explicit refusals,
-verified adaptive quizzes, and a Bayesian Knowledge Tracing learner model.
+tutor that speaks: grounded answers read aloud, audio quizzes with independently
+verified questions, spoken feedback, and a personalized audio study brief built
+from a Bayesian Knowledge Tracing learner model. Off-material questions are
+declined — never invented.
 
-Code: https://github.com/maebahesioru/multimodal-study-companion"""
+Code: https://github.com/maebahesioru/echoscholar"""
 
 
 def log(*a):
